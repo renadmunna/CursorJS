@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>CursorJS with Dom Element</title>
+<link rel="shortcut icon" href="res/img/icon.png" type="image/x-icon">
+<meta name="description" content="Dynamic cursor engine for web ( Render with : SVG )">
+<meta name="keywords" content="cursor, dynamic, javascript, svg, render, renderer, lightweight, engine">
+<meta name="author" content="Ali Mohsin">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+<!-- <script src="../build/cursor.js"></script> -->
+<script src="../build/cursor.min.js"></script>
+<link rel="stylesheet" href="res/default.css"/>
+<style>
+@media (max-width: 768px) and (min-width: 480px){}
+@media (max-width: 480px){}
+body{
+margin:0;padding:0;
+position:fixed;
+width:100%;height:100%;
+background:white;
+}
+body::before{
+content:"";
+position:absolute;
+left:0;top:0;
+width:100%;height:50%;
+background:black;
+}
+</style>
+</head>
+<body>
+<div style="display:none;">
+<svg id="svg" width="14px" height="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 20">
+<polygon points="2,9 2,2 8,6" style="fill:#ffffff;stroke:#161616;stroke-width:1;"/>
+<circle cx="9" cy="15" r="3" style="fill:#ffffff;stroke:#161616;stroke-width:1;"/>
+</svg>
+</div>
+<script>
+cursor({
+  domElement:document.body,
+  type:"svg",
+  svgElement:document.getElementById("svg")
+});
+</script>
+</body>
+</html>

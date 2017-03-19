@@ -17,7 +17,7 @@ cursor({
   svgString:cursor_svg_string
 });
 
-# with SVG element in html (Hide SVG container)
+# With SVG element in html (Hide SVG container)
 cursor({
   domElement:document.body,
   type:"svg",

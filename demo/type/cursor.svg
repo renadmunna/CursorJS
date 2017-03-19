@@ -1,0 +1,6 @@
+<svg id="svg" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg" viewBox="-350 -250 700 500">
+<circle r="200" class="face" fill="red"/>
+<path fill="none" class="face" transform="translate(-396,-230)" d="M487.41,282.411c-15.07,36.137-50.735,61.537-92.333,61.537 c-41.421,0-76.961-25.185-92.142-61.076"/>
+<circle cx="-60" cy="-50" r="20" fill="#000"/>
+<circle cx="60" cy="-50" r="20" fill="#000"/>
+</svg>
